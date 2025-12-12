@@ -21,15 +21,30 @@
   </head>
 
   <body class="flex flex-col bg-[F5F5F5] text-[#252525] min-h-screen">
-    <header class="flex flex-row items-start pt-6 pb-4 px-10">
+    <header class="flex flex-row items-start justify-between pt-6 pb-4 px-10">
       <div class="flex flex-row items-start gap-3" id="logo">
         <img src="./assets/front-of-bus.png" alt="bus-icon" class="h-6" />
         <a
           href="./index.html"
-          class="text-sm md:text-xl font-bold text-[#30C7B8] cursor-pointer"
+          class="text-sm md:text-xl font-bold text-[#30C7B8] cursor-pointer p-1"
         >
-          চ.প.ই. রুট
+          চ.প.ই. বাস
         </a>
+      </div>
+      <div>
+        <nav class="text-sm flex gap-1 md:gap-3">
+          <a class="hover:bg-[#30C7B8] p-1 hover:text-white" href="./index.html"
+            >হোম পেইজ</a
+          >
+          <a class="hover:bg-[#30C7B8] p-1 hover:text-white" href="#"
+            >ট্র্যাক করুন</a
+          >
+          <a
+            class="hover:bg-[#30C7B8] p-1 hover:text-white"
+            href="./routes.html"
+            >সকল রুট</a
+          >
+        </nav>
       </div>
     </header>
     <hr />
@@ -40,7 +55,10 @@
             সকল
             <span class="bg-[#30C7B8] pb-1 pt-2 px-2 text-white">বাস রুট</span>
           </p>
-          <p class="text-xs md:sm">সকল বাস ছাড়া সময় সকাল ৭টা এবং দুপুর ১২টা। ফিরতি বাস ছাড়ার সময় দুপুর ১:৩০ এবং বিকাল ৬টা</p>
+          <p class="text-xs md:sm">
+            সকল বাস ছাড়া সময় সকাল ৭টা এবং দুপুর ১২টা। ফিরতি বাস ছাড়ার সময় দুপুর
+            ১:৩০ এবং বিকাল ৬টা
+          </p>
         </div>
         <div class="flex flex-col items-center justify-center gap-5">
           <div
