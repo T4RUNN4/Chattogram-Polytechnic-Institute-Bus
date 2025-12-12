@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>CPI Bus Tracker</title>
+
+    <style>
+      @font-face {
+        font-family: "Bornomala";
+        src: url("./assets/Bornomala-Regular.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      body {
+        font-family: "Bornomala";
+      }
+    </style>
+  </head>
+
+  <body class="flex flex-col bg-[F5F5F5] text-[#252525] min-h-screen">
+    <header class="flex flex-row items-start pt-6 pb-4 px-10">
+      <div class="flex flex-row items-start gap-3" id="logo">
+        <img src="./assets/front-of-bus.png" alt="bus-icon" class="h-6" />
+        <a
+          href="./index.html"
+          class="text-sm md:text-xl font-bold text-[#30C7B8] cursor-pointer"
+        >
+          চ.প.ই. বাস
+        </a>
+      </div>
+    </header>
+    <hr />
+    <main class="grow pb-8 px-10">
+      <section id="hero-section" class="grid grid-cols-1 md:grid-cols-2 pb-10">
+        <div class="flex w-120">
+          <img
+            src="https://img.freepik.com/free-vector/passengers-waiting-bus-city-queue-town-road-flat-vector-illustration-public-transport-urban-lifestyle_74855-8493.jpg?semt=ais_hybrid&w=740&q=80"
+            alt="bus flat illustration"
+            class="w-120"
+          />
+        </div>
+        <div class="flex flex-col items-start justify-center gap-1.5 pt-4 px-6">
+          <div>
+            <p
+              class="text-xs border-2 border-grey-600 py-1.5 px-4 rounded-full"
+            >
+              চ.প.ই. বাস ট্র্যাকার
+            </p>
+          </div>
+          <div class="flex flex-col gap-6">
+            <div class="flex flex-col gap-2 text-xl md:text-4xl">
+              <p class="leading-tight font-bold">
+                আপনার গন্তব্যস্থলগামী পরবর্তী ক্যাম্পাস বাস
+                <span class="bg-[#30C7B8] pb-1 pt-2 px-3 text-white">
+                  ট্র্যাক করুন
+                </span>
+              </p>
+              <p class="text-xs lg:text-sm text-align-justified">
+                চট্টগ্রাম পলিটেকনিক ইন্সটিটিউট এর শিক্ষার্থীদের জন্য নিজের
+                গন্তব্যস্থলগামী বাস ট্র্যাক করার ওয়ান-স্টপ প্ল্যাটফর্ম
+              </p>
+            </div>
+            <div class="flex flex-row gap-5 text-base md:text-lg">
+              <button
+                class="bg-[#30C7B8] text-white text-xs md:text-base py-1.5 px-6 rounded-full transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 drop-shadow-xl"
+              >
+                ট্র্যাক করুন
+              </button>
+
+              <a
+                class="border-2 border-grey-600 bg-white text-xs md:text-base py-1.5 px-4 rounded-full transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 drop-shadow-xl"
+                href="./routes.html"
+                >সকল রুট</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section class="flex flex-col items-center justify-center pt-20 pb-10">
+        <div class="pb-10">
+          <p class="leading-tight font-bold text-2xl md:text-4xl">
+            কীভাবে
+            <span class="bg-[#30C7B8] pb-1 pt-2 pl-2 text-white">
+              চ.প.ই. বাস
+            </span>
+            কাজ করে?
+          </p>
+        </div>
+        <div
+          class="flex flex-col md:flex-row items-center justify-center gap-5"
+        >
+          <div
+            class="flex flex-col items-center justify-center gap-6 p-5 border-2 border-grey-600 rounded-lg cursor-pointer bg-white drop-shadow-xl transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
+          >
+            <img
+              src="./assets/choice.png"
+              class="h-12 md:h-20"
+              alt="choice icon"
+            />
+            <p class="text-base md:text-xl font-bold">
+              আপনার স্টপ সিলেক্ট করুন
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center gap-6 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
+          >
+            <img
+              src="./assets/back-in-time.png"
+              class="h-12 md:h-20"
+              alt="choice icon"
+            />
+            <p class="text-base md:text-xl font-bold">আপনার সময় সিলেক্ট করুন</p>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center gap-6 p-5 border-2 border-grey-600 rounded-lg cursor-pointer bg-white drop-shadow-xl transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
+          >
+            <img
+              src="./assets/hourglass.png"
+              class="h-12 md:h-20"
+              alt="choice icon"
+            />
+            <p class="text-base md:text-xl font-bold">
+              পরবর্তী বাসের সময় জানুন
+            </p>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section class="flex flex-col items-center justify-center pt-20 pb-10">
+        <div class="pb-10">
+          <p class="leading-tight font-bold text-2xl md:text-4xl">
+            ব্যবহারকারীদের
+            <span class="bg-[#30C7B8] pb-1 pt-2 px-2 text-white">মতামত</span>
+          </p>
+        </div>
+        <div
+          class="flex flex-col md:flex-row items-center justify-center md:px-20 gap-5"
+        >
+          <div
+            class="flex items-center justify-center gap-6 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
+          >
+            <img
+              src="./assets/man.png"
+              class="h-12 md:h-20"
+              alt="choice icon"
+            />
+            <div class="flex flex-col items-start">
+              <p class="text-base md:text-xl font-bold">মো. মেহেদী হাসান</p>
+              <p class="text-xs md:sm">
+                চিফ ইন্সট্রাকটর, কম্পিউটার সায়েন্স এন্ড টেকনোলজী
+              </p>
+              <p class="text-sm md:text-base text-align-justified pt-5">
+                অনেক স্মুথ UI এর এই চমৎকার ওয়েবসাইটি শিক্ষার্থীদের দৈনন্দিন
+                যাতায়াতে নিশ্চয় অনেক বেশী সাহায্যকারী হবে।
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-center gap-6 p-5 border-2 border-grey-600 rounded-lg cursor-pointer bg-white drop-shadow-xl transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
+          >
+            <img
+              src="./assets/boy.png"
+              class="h-12 md:h-20"
+              alt="choice icon"
+            />
+            <div class="flex flex-col items-start">
+              <p class="text-base md:text-xl font-bold">হোসেন কাদের ফারদিন</p>
+              <p class="text-xs md:sm">
+                শিক্ষার্থী, কম্পিউটার সায়েন্স এন্ড টেকনোলজী
+              </p>
+              <p class="text-sm md:text-base text-align-justified pt-5">
+                চট্টগ্রাম পলিটেকনিক শিক্ষার্থী যারা প্রতিদিন অনেক দূর থেকে ক্লাস
+                করতে আসে, তাদের জন্য খুবই উপকারী একটি প্ল্যাটফর্ম।
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <hr />
+    <footer
+      class="flex flex-col items-center justify-center pt-5 pb-5 text-sm gap-1"
+    >
+      <p>Developed by Team 0xExp1073R5</p>
+      <p>© 2025 All rights reserved</p>
+    </footer>
+  </body>
+</html>
