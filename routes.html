@@ -33,14 +33,18 @@
       </div>
       <div>
         <nav class="text-sm flex gap-1 md:gap-3">
-          <a class="hover:bg-[#30C7B8] p-1 hover:text-white" href="./index.html"
+          <a
+            class="hover:bg-[#30C7B8] p-1 rounded-md transition duration-200 hover:text-white"
+            href="./index.html"
             >হোম পেইজ</a
           >
-          <a class="hover:bg-[#30C7B8] p-1 hover:text-white" href="#"
+          <a
+            class="hover:bg-[#30C7B8] p-1 rounded-md transition duration-200 ease-in-out hover:text-white"
+            href="#"
             >ট্র্যাক করুন</a
           >
           <a
-            class="hover:bg-[#30C7B8] p-1 hover:text-white"
+            class="hover:bg-[#30C7B8] p-1 rounded-md transition duration-200 ease-in-out hover:text-white"
             href="./routes.html"
             >সকল রুট</a
           >
@@ -49,26 +53,33 @@
     </header>
     <hr />
     <main class="grow pb-8 px-10">
-      <section class="flex flex-col items-center justify-center pt-20 pb-10">
+      <section class="flex flex-col items-center justify-center pt-12 pb-10">
         <div class="flex flex-col items-center justify-center gap-2 pb-10">
           <p class="leading-tight font-bold text-2xl md:text-4xl">
             সকল
-            <span class="bg-[#30C7B8] pb-1 pt-2 px-2 text-white">বাস রুট</span>
+            <span class="bg-[#30C7B8] pb-1 pt-2 px-2 rounded-md text-white"
+              >বাস রুট</span
+            >
           </p>
           <p class="text-xs md:sm">
             সকল বাস ছাড়া সময় সকাল ৭টা এবং দুপুর ১২টা। ফিরতি বাস ছাড়ার সময় দুপুর
             ১:৩০ এবং বিকাল ৬টা
           </p>
         </div>
-        <div class="flex flex-col items-center justify-center gap-5">
+        <div class="grid md:grid-flow-col grid-rows-1 md:grid-rows-3 gap-2">
           <div
-            class="flex w-[90%] flex-col items-start justify-center gap-6 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
+            class="flex items-center justify-center gap-8 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
           >
-            <div>
-              <p class="text-xl md:text-3xl font-bold">রুট নং ১</p>
+            <div class="flex flex-col items-center justify-center">
+              <p class="text-xl md:text-xl font-bold">রুট</p>
+              <p
+                class="text-xl md:text-6xl font-bold bg-orange-600 rounded-lg text-white px-4 pt-2"
+              >
+                ১
+              </p>
             </div>
-            <div>
-              <p class="text-xs md:sm">যেই রাস্তা দিয়ে যাবে:</p>
+            <div class="flex flex-col items-start justify-center gap-1">
+              <p class="text-xs md:text-sm">যেই রাস্তা দিয়ে যাবে:</p>
               <p class="text-base md:text-xl font-bold">
                 অক্সিজেন - চৌধুরি হাট - চুয়েট জংশন রোড - কালুরঘাট জংশন -
                 চট্টগ্রাম পলিটেকনিক ইন্সটিটিউট
@@ -76,42 +87,56 @@
             </div>
           </div>
           <div
-            class="flex flex-col w-[90%] items-start justify-center gap-6 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
+            class="flex items-center justify-center gap-8 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
           >
-            <div>
-              <p class="text-xl md:text-3xl font-bold">রুট নং ২</p>
+            <div class="flex flex-col items-center justify-center">
+              <p class="text-xl md:text-xl font-bold">রুট</p>
+              <p
+                class="text-xl md:text-6xl font-bold bg-purple-800 rounded-lg text-white px-4 pt-2"
+              >
+                ২
+              </p>
             </div>
-            <div>
-              <p class="text-xs md:sm">যেই রাস্তা দিয়ে যাবে:</p>
+            <div class="flex flex-col items-start justify-center gap-1">
+              <p class="text-xs md:text-sm">যেই রাস্তা দিয়ে যাবে:</p>
               <p class="text-base md:text-xl font-bold">
                 বহদ্দারহাট রুট টার্মিনাল - শুলকবহর - চাঁদগাও - হাটাজারি রোড
-                ক্রসিং - চট্টগ্রাম পলিটেকনিক
+                ক্রসিং - চট্টগ্রাম পলিটেকনিক ইন্সটিটিউট
               </p>
             </div>
           </div>
           <div
-            class="flex flex-col w-[90%] items-start justify-center gap-6 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
+            class="flex items-center justify-center gap-8 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
           >
-            <div>
-              <p class="text-xl md:text-3xl font-bold">রুট নং ৩</p>
+            <div class="flex flex-col items-center justify-center">
+              <p class="text-xl md:text-xl font-bold">রুট</p>
+              <p
+                class="text-xl md:text-6xl font-bold bg-green-500 rounded-lg text-white px-4 pt-2"
+              >
+                ৩
+              </p>
             </div>
-            <div>
-              <p class="text-xs md:sm">যেই রাস্তা দিয়ে যাবে:</p>
+            <div class="flex flex-col items-start justify-center gap-1">
+              <p class="text-xs md:text-sm">যেই রাস্তা দিয়ে যাবে:</p>
               <p class="text-base md:text-xl font-bold">
-                আগ্রাবাদ এক্সেস রোড - বারিক বিল্ডিং - দেওয়ানহাট - টাইগারপাস -
-                ওয়াসার মোড় - লালখান বাজার - জিইসি মোড় - ২নং গেইট - চট্টগ্রাম
-                পলিটেকনিক ইন্সটিটিউট
+                আগ্রাবাদ এক্সেস রোড - টাইগারপাস - লালখান বাজার - জিইসি মোড় - ২
+                গেইট - চট্টগ্রাম পলিটেকনিক ইন্সটিটিউট
               </p>
             </div>
           </div>
           <div
-            class="flex flex-col w-[90%] items-start justify-center gap-6 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
+            class="flex items-center justify-center gap-8 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
           >
-            <div>
-              <p class="text-xl md:text-3xl font-bold">রুট নং ৪</p>
+            <div class="flex flex-col items-center justify-center">
+              <p class="text-xl md:text-xl font-bold">রুট</p>
+              <p
+                class="text-xl md:text-6xl font-bold bg-blue-700 text-white rounded-lg px-4 pt-2"
+              >
+                ৪
+              </p>
             </div>
-            <div>
-              <p class="text-xs md:sm">যেই রাস্তা দিয়ে যাবে:</p>
+            <div class="flex flex-col items-start justify-center gap-1">
+              <p class="text-xs md:text-sm">যেই রাস্তা দিয়ে যাবে:</p>
               <p class="text-base md:text-xl font-bold">
                 পতেঙ্গা - ইপিজেড - কাস্টমস - নিমতলা - চকবাজার - মুরাদপর - চৌধুরি
                 হাট - চট্টগ্রাম পলিটেকনিক ইন্সটিটিউট
@@ -119,16 +144,40 @@
             </div>
           </div>
           <div
-            class="flex flex-col w-[90%] items-start justify-center gap-6 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
+            class="flex items-center justify-center gap-8 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
           >
-            <div>
-              <p class="text-xl md:text-3xl font-bold">রুট নং ৫</p>
+            <div class="flex flex-col items-center justify-center">
+              <p class="text-xl md:text-xl font-bold">রুট</p>
+              <p
+                class="text-xl md:text-6xl font-bold bg-pink-600 rounded-lg text-white px-4 pt-2"
+              >
+                ৫
+              </p>
             </div>
-            <div>
-              <p class="text-xs md:sm">যেই রাস্তা দিয়ে যাবে:</p>
+            <div class="flex flex-col items-start justify-center gap-1">
+              <p class="text-xs md:text-sm">যেই রাস্তা দিয়ে যাবে:</p>
               <p class="text-base md:text-xl font-bold">
                 সীতাকুন্ড - ফৌজদারহাট - বায়োজীদ লিংক রোড - চুয়েট রোড জংশন -
                 চট্টগ্রাম পলিটেকনিক ইন্সটিটিউট
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-center gap-8 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
+          >
+            <div class="flex flex-col items-center justify-center">
+              <p class="text-xl md:text-xl font-bold">রুট</p>
+              <p
+                class="text-xl md:text-6xl font-bold bg-amber-400 rounded-lg text-white px-4 pt-2"
+              >
+                ৬
+              </p>
+            </div>
+            <div class="flex flex-col items-start justify-center gap-1">
+              <p class="text-xs md:text-sm">যেই রাস্তা দিয়ে যাবে:</p>
+              <p class="text-base md:text-xl font-bold">
+                পাহাড়তলী - খুলসী - লালখান বাজার -মুরাদপুর - চট্টগ্রাম পলিটেকনিক
+                ইন্সটিটিউট
               </p>
             </div>
           </div>
