@@ -1,30 +1,30 @@
 document.addEventListener("DOMContentLoaded", () => {
   const stopMap = {
-    "অক্সিজেন": "Oxygen",
-    "চৌধুরি হাট": "Chowdhury Hat",
-    "চুয়েট জংশন রোড": "CUET Junction Road",
-    "কালুরঘাট জংশন": "kalurghat Junction",
-    "চট্টগ্রাম পলিটেকনিক ইন্সটিটিউট": "Chattogram Polytechnic Institute",
-    "বহদ্দারহাট রুট টার্মিনাল": "Bahaddarhat Route Terminal",
-    "শুলকবহর": "Shulokbohor",
-    "চাঁদগাও": "Chadgao",
-    "হাটাজারি রোড ক্রসিং": "Hatazari Road Crossing",
-    "আগ্রাবাদ এক্সেস রোড": "Agrabad Access Road",
-    "টাইগারপাস": "Tigerpass",
-    "লালখান বাজার": "Lalkhan Bazar",
-    "জিইসি মোড়": "GEC Circle",
-    "২নং গেইট": "2no. Gate",
-    "পতেঙ্গা": "Patenga",
-    "ইপিজেড": "EPEZ",
-    "কাস্টমস": "Customs",
-    "নিমতলা": "Nimtola",
-    "চকবাজার": "Chawkbazar",
-    "মুরাদপুর": "Muradpur",
-    "সীতাকুন্ড": "Sitakundu",
-    "ফৌজদারহাট": "Fouzdarhat",
-    "বায়োজীদ লিংক রোড": "Batzid Link Road",
-    "পাহাড়তলী": "Pahartali",
-    "খুলসী": "Khulsi",
+    "অক্সিজেন": "oxygen",
+    "চৌধুরি হাট": "chowdhury hat",
+    "চুয়েট জংশন রোড": "cuet junction road",
+    "কালুরঘাট জংশন": "kalurghat junction",
+    "চট্টগ্রাম পলিটেকনিক ইন্সটিটিউট": "chattogram polytechnic institute",
+    "বহদ্দারহাট রুট টার্মিনাল": "bahaddarhat route terminal",
+    "শুলকবহর": "shulokbohor",
+    "চাঁদগাও": "chadgao",
+    "হাটাজারি রোড ক্রসিং": "hatazari road crossing",
+    "আগ্রাবাদ এক্সেস রোড": "agrabad access road",
+    "টাইগারপাস": "tigerpass",
+    "লালখান বাজার": "lalkhan bazar",
+    "জিইসি মোড়": "gec circle",
+    "২নং গেইট": "2no. gate",
+    "পতেঙ্গা": "patenga",
+    "ইপিজেড": "epez",
+    "কাস্টমস": "customs",
+    "নিমতলা": "nimtola",
+    "চকবাজার": "chawkbazar",
+    "মুরাদপুর": "muradpur",
+    "সীতাকুন্ড": "sitakundu",
+    "ফৌজদারহাট": "fouzdarhat",
+    "বায়োজীদ লিংক রোড": "bayazid link road",
+    "পাহাড়তলী": "pahartali",
+    "খুলসী": "khulsi",
   };
 
   const mockData = {
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const resultDiv = document.getElementById("result-div");
 
   stopInput.addEventListener("input", () => {
-    const query = stopInput.value.trim();
+    const query = stopInput.value.trim().toLowerCase();
     result.innerHTML = "";
 
     if (!query) return resultDiv.classList.add("hidden");
