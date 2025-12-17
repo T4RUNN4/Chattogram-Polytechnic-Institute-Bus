@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>CPI Bus Tracker</title>
+  </head>
+
+  <body class="flex flex-col bg-[F5F5F5] text-[#252525] min-h-screen">
+    <header class="flex flex-row items-start justify-between pt-6 pb-4 px-10">
+      <div class="flex flex-row items-start gap-3" id="logo">
+        <img src="./assets/front-of-bus.png" alt="bus-icon" class="h-6" />
+        <a
+          href="./index.html"
+          class="text-sm md:text-xl font-bold text-[#30C7B8] cursor-pointer p-1"
+        >
+          চ.প.ই. বাস
+        </a>
+      </div>
+      <div>
+        <nav class="text-sm flex gap-1 md:gap-3">
+          <a
+            class="hover:bg-[#30C7B8] py-1 px-2 rounded-md transition duration-200 hover:text-white"
+            href="./index.html"
+            >হোম পেইজ</a
+          >
+          <a
+            class="hover:bg-[#30C7B8] py-1 px-2 rounded-md transition duration-200 ease-in-out hover:text-white"
+            href="./track.html"
+            >ট্র্যাক করুন</a
+          >
+          <a
+            class="hover:bg-[#30C7B8] py-1 px-2 rounded-md transition duration-200 ease-in-out hover:text-white"
+            href="./routes.html"
+            >সকল রুট</a
+          >
+          <a
+            class="hover:bg-[#30C7B8] py-1 px-2 rounded-md transition duration-200 ease-in-out hover:text-white"
+            href="./rules.html"
+            >নিয়মাবলি</a
+          >
+        </nav>
+      </div>
+    </header>
+    <hr />
+    <main class="grow pb-8 px-10">
+      <section class="flex flex-col items-center justify-center pt-16">
+        <div class="flex flex-col items-center justify-center gap-2 pb-12">
+          <p class="leading-tight font-bold text-2xl md:text-4xl">
+            বাস ব্যবহারের
+            <span class="bg-[#30C7B8] pb-1 pt-2 px-2 rounded-md text-white"
+              >নিয়মাবলি</span
+            >
+          </p>
+          <p class="text-xs md:sm">
+            ক্যাম্পাস বাস ব্যবহারের সময় সকল শিক্ষার্থীর জন্য যেসকল নিয়ম মেনে চলা
+            আবশ্যক
+          </p>
+        </div>
+      </section>
+      <section class="flex flex-col items-center justify-center pb-10">
+        <div class="flex flex-col items-center justify-center px-12 gap-4">
+          <div
+            class="flex items-center justify-center gap-8 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
+          >
+            <p
+              class="text-xl md:text-5xl font-bold bg-orange-600 rounded-lg text-white px-4 pt-2"
+            >
+              ১
+            </p>
+            <p class="text-base md:text-base">
+              ক্যাম্পাস বাসে ভ্রমণ সুবিধা শুধুমাত্র চট্টগ্রাম পলিটেকনিক
+              ইন্সটিটিউট এর
+              <span class="font-bold"
+                >বর্তমান শিক্ষার্থী, শিক্ষক ও কর্মচারীদের</span
+              >
+              জন্য প্রযোজ্য। এই ব্যতীত কেউ বাসে ভ্রমণ নিষিদ্ধ। ক্যাম্পাস
+              বহির্ভূত কাউকে চড়তে দেখা গেলে তাকে
+              <span class="font-bold">সরাসরি শাস্তির আওতাভুক্ত করা হবে।</span>
+              শিক্ষার্থীর সাথে একজন রক্ত সম্পর্কীয় অভিভাবক ভ্রমণ করতে পারবে।
+            </p>
+          </div>
+          <div
+            class="flex items-center justify-center gap-8 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
+          >
+            <p
+              class="text-xl md:text-5xl font-bold bg-purple-800 rounded-lg text-white px-4 pt-2"
+            >
+              ২
+            </p>
+            <p class="text-base md:text-base">
+              ক্যাম্পাসে বাসে চড়তে হলে শিক্ষার্থীকে অবশ্যই
+              <span class="font-bold"
+                >পূর্ণ ক্যাম্পাস ইউনিফর্ম পরিধান করতে হবে এবং ক্যাম্পাসের আইডি
+                কার্ড সঙ্গে রাখতে হবে।</span
+              >
+              তবে, ১ম সেমিস্টারের যেসকল শিক্ষার্থী আইডি কার্ড পায়নি, তারা স্ব
+              স্ব টেকনোলজীর চিফ ইন্সট্রাকটর কর্তৃক স্বাক্ষরিত অনুমতিপত্র ব্যবহার
+              করে বাসে ভ্রমণ করতে পারবে।
+            </p>
+          </div>
+          <div
+            class="flex items-center justify-center gap-8 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
+          >
+            <p
+              class="text-xl md:text-5xl font-bold bg-green-600 rounded-lg text-white px-4 pt-2"
+            >
+              ৩
+            </p>
+            <p class="text-base md:text-base">
+              বাসে ভ্রমণকালীন সময়ে কোন অবস্থাতেই বাসের চালক কিংবা চালকের সহকারীর
+              সাথে <span class="font-bold">খারাপ বা অশালীন আচরণ</span> করা যাবে
+              না। যদি তাদের পক্ষ থেকে কোন অনিয়ম দেখা যায়, তা সরাসরি ক্যাম্পাস
+              কর্তৃপক্ষকে জানানোর অনুরোধ করা যাচ্ছে।
+            </p>
+          </div>
+          <div
+            class="flex items-center justify-center gap-8 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
+          >
+            <p
+              class="text-xl md:text-5xl font-bold bg-blue-700 rounded-lg text-white px-4 pt-2"
+            >
+              ৪
+            </p>
+            <p class="text-base md:text-base">
+              ক্যাম্পাস বাস সম্পর্কিত কোন প্রকার
+              <span class="font-bold"
+                >ফি গ্রহণ বা আর্থিক লেনদেন করা হয় না।</span
+              >
+              কারো সাথে কোন প্রকার আর্থিক লেনদেন করা থেকে বিরত থাকুন এবং কেউ
+              করতে চাইলে তার সম্পর্কে সরাসরি অভিযোগ জানান কর্তৃপক্ষের কাছে।
+            </p>
+          </div>
+          <div
+            class="flex items-center justify-center gap-8 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
+          >
+            <p
+              class="text-xl md:text-5xl font-bold bg-amber-400 rounded-lg text-white px-4 pt-2"
+            >
+              ৫
+            </p>
+            <p class="text-base md:text-base">
+              বাসসমূহ সকল রুট পেইজে বর্ণিত প্রত্যেকটি স্টপগুলোতে শুধুমাত্র
+              <span class="font-bold">৫ মিনিটের জন্য</span> অপেক্ষা করবে। তাই
+              স্ব স্ব স্টপের বাস ট্র্যাক করে সময়ানুবর্তি হয়ে স্টপে উপস্থিত থাকার
+              জন্য অনুরোধ করা হলো।
+            </p>
+          </div>
+          <div
+            class="flex items-center justify-center gap-8 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
+          >
+            <p
+              class="text-xl md:text-5xl font-bold bg-pink-600 rounded-lg text-white px-4 pt-2"
+            >
+              ৬
+            </p>
+            <p class="text-base md:text-base">
+              বাসে কারো হারানো কোন প্রকার সম্পদ পেলে তা ক্যাম্পাসে কর্তৃপক্ষের
+              কাছে জমা দেওয়ার অনুরোধ করা যাচ্ছে। যদি নিজের কোন জিনিস হারিয়ে গিয়ে
+              থাকে, তাহলে যথাপোযুক্ত প্রমাণ দিয়ে ক্যাম্পাস থেকে সংগ্রহ করতে হবে।
+              কোন সম্পদ <span class="font-bold">৬০ কর্মদিবসের</span> মধ্যে
+              সংগ্রহ করা না হলে, তার দায়িত্ব ক্যাম্পাস কর্তৃপক্ষ নিবে না।
+            </p>
+          </div>
+          <div
+            class="flex items-center justify-center gap-8 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
+          >
+            <p
+              class="text-xl md:text-5xl font-bold bg-red-700 rounded-lg text-white px-4 pt-2"
+            >
+              ৭
+            </p>
+            <p class="text-base md:text-base">
+              সকল বাস
+              <span class="font-bold"
+                >জিপিএস ট্র্যাকার এবং সিসি ক্যামেরার সাহায্যে</span
+              >
+              সার্বক্ষণিক নজরে রাখা হচ্ছে। তাই বাসে ভ্রমণকালীন ক্যাম্পাস কিংবা
+              ট্রাফিক আইন ভঙ্গকারী কোন কার্যক্রম না করার অনুরোধ জানানো হচ্ছে।
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <hr />
+    <footer
+      class="flex flex-col items-center justify-center pt-5 pb-5 text-sm gap-1"
+    >
+      <p>Developed by Team 0xExp1073R5</p>
+      <p>© 2025 All rights reserved</p>
+    </footer>
+  </body>
+</html>
