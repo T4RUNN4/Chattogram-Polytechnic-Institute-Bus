@@ -53,8 +53,11 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!query) return resultDiv.classList.add("hidden");
     resultDiv.classList.remove("hidden");
 
+    let found = false;
+
     Object.keys(stopMap).forEach(stop => {
       if (stop.includes(query) || stopMap[stop].includes(query)) {
+        found = true;
         const li = document.createElement("li");
         li.className = "text-base py-1 px-2 cursor-pointer hover:bg-[#30C7B8] hover:text-white rounded-md";
         li.textContent = stop;
@@ -65,6 +68,8 @@ document.addEventListener("DOMContentLoaded", () => {
         result.appendChild(li);
       }
     });
+
+    if (!found) resultDiv.classList.add("hidden");
   });
 
   const timeToMinutes = t => {
@@ -82,17 +87,69 @@ document.addEventListener("DOMContentLoaded", () => {
     const stop = stopInput.value.trim();
     const time = timeInput.value;
     const userMinutes = timeToMinutes(time);
-
-    if (!stop || !time) {
-      alert("দয়া করে স্টপ এবং সময় নির্বাচন করুন");
-      return;
-    }
-
     const resultInfoDiv = document.getElementById("resultInfoDiv");
     resultInfoDiv.innerHTML = "";
 
+    if (!stop || !time) {
+      resultInfoDiv.classList.remove("hidden");
+      resultInfoDiv.classList.add("border-red-600");
+      resultInfoDiv.innerHTML = `
+        <p class="text-2xl font-bold">সঠিকভাবে স্টপ এবং সময় সিলেক্ট করুন।</p>
+      `;
+      stopInput.value="";
+      timeInput.value="";
+      return;
+    }
+
+    if (!Object.prototype.hasOwnProperty.call(stopMap, stop)) {
+      resultInfoDiv.classList.remove("hidden");
+      resultInfoDiv.classList.add("border-red-600");
+      resultInfoDiv.innerHTML = `
+        <p class="text-2xl font-bold">স্টপ পাওয়া যায়নি</p>
+        <p class="pt-2 text-base">
+          সাজেশন থেকে সঠিক স্টপটি সিলেক্ট করুন। <br>
+          বি:দ্র: শুধুমাত্র যেসকল স্টপে বাস দাঁড়াবে সেই স্টপগুলোই উল্লেখিত আছে। <a href="./routes.html">সম্পূর্ণ রুট চেক করুন।</a>
+        </p>
+      `;
+      stopInput.value="";
+      timeInput.value="";
+      return;
+    }
+
+    const servedByAnyBus = Object.values(mockData).some(bus =>
+      bus.nextStops.includes(stop) || bus.passedStops.includes(stop)
+    );
+
+    if (!servedByAnyBus) {
+      resultInfoDiv.classList.remove("hidden");
+      resultInfoDiv.classList.add("border-red-600");
+      resultInfoDiv.innerHTML = `
+        <p class="text-2xl font-bold">কোনো বাস নেই</p>
+        <p class="pt-2 text-base">
+          আজকে আপনার স্টপগামী আর কোন ক্যাম্পাস বাস আপাতত নেই। 
+        </p>
+      `;
+      stopInput.value="";
+      timeInput.value="";
+      return;
+    }
+
     Object.values(mockData).forEach(bus => {
-      if (bus.passedStops.includes(stop)) return;
+      if (bus.passedStops.includes(stop)) {
+        resultInfoDiv.classList.remove("hidden");
+        resultInfoDiv.classList.add("border-red-600");
+        resultInfoDiv.innerHTML = `
+          <p class="text-2xl font-bold">
+            দুঃখিত!
+          </p>
+          <p class="pt-2 text-base">
+            ক্যাম্পাস বাস আপনার স্টপ ইতিমধ্যে পার করে চলে গিয়েছে।
+          </p>
+        `;
+        stopInput.value="";
+        timeInput.value="";
+        return;
+      };
 
       const index = bus.nextStops.indexOf(stop);
       if (index === -1) return;
@@ -105,6 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const arrivalTime = minutesToTime(arrivalMinutes);
 
       resultInfoDiv.classList.remove("hidden");
+      resultInfoDiv.classList.add("border-green-400");
       resultInfoDiv.innerHTML = `
         <p class="text-2xl font-bold">
           মাত্র
