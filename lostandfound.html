@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>CPI Bus Tracker</title>
+  </head>
+
+  <body class="flex flex-col bg-[F5F5F5] text-[#252525] min-h-screen">
+    <header class="flex flex-row items-start justify-between pt-6 pb-4 px-10">
+      <div class="flex flex-row items-start gap-3" id="logo">
+        <img src="./assets/front-of-bus.png" alt="bus-icon" class="h-6" />
+        <a
+          href="./index.html"
+          class="text-sm md:text-xl font-bold text-[#30C7B8] cursor-pointer p-1"
+        >
+          চ.প.ই. বাস
+        </a>
+      </div>
+      <div>
+        <nav class="text-sm flex gap-1 md:gap-3">
+          <a
+            class="hover:bg-[#30C7B8] py-1 px-2 rounded-md transition duration-200 hover:text-white"
+            href="./index.html"
+            >হোম পেইজ</a
+          >
+          <a
+            class="hover:bg-[#30C7B8] py-1 px-2 rounded-md transition duration-200 ease-in-out hover:text-white"
+            href="./track.html"
+            >ট্র্যাক করুন</a
+          >
+          <a
+            class="hover:bg-[#30C7B8] py-1 px-2 rounded-md transition duration-200 ease-in-out hover:text-white"
+            href="./routes.html"
+            >সকল রুট</a
+          >
+          <a
+            class="hover:bg-[#30C7B8] py-1 px-2 rounded-md transition duration-200 ease-in-out hover:text-white"
+            href="./rules.html"
+            >নিয়মাবলি</a
+          >
+          <a
+            class="hover:bg-[#30C7B8] py-1 px-2 rounded-md transition duration-200 ease-in-out hover:text-white"
+            href="./lostandfound.html"
+            >হারানো জিনিসপাতি</a
+          >
+        </nav>
+      </div>
+    </header>
+    <hr />
+    <main class="grow pb-8 px-10">
+      <section class="flex flex-col items-center justify-center pt-12 pb-10">
+        <div class="flex flex-col items-center justify-center gap-2 pb-10">
+          <p class="leading-tight font-bold text-2xl md:text-4xl">
+            হারানো
+            <span class="bg-[#30C7B8] pb-1 pt-2 px-2 rounded-md text-white"
+              >জিনিসপাতি</span
+            >
+          </p>
+          <p class="text-xs md:sm">
+            ক্যাম্পাস বাসে খুঁজে পাওয়া বিভিন্ন জিনিসের তালিকা। প্রমাণ'সহ ৬০ কর্মদিবসের মধ্যে ক্যাম্পাস কর্তৃপক্ষের কাছ থেকে সংগ্রহ করতে হবে।
+          </p>
+        </div>
+      </section>
+    </main>
+    <hr />
+    <footer
+      class="flex flex-col items-center justify-center pt-5 pb-5 text-sm gap-1"
+    >
+      <p>Developed by Team 0xExp1073R5</p>
+      <p>© 2025 All rights reserved</p>
+    </footer>
+  </body>
+</html>
