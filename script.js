@@ -78,7 +78,10 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const minutesToTime = mins => {
-    const h = Math.floor(mins / 60) % 12;
+    let h = Math.floor(mins / 60) % 12;
+    if(h === 0) {
+      h = 12
+    };
     const m = mins % 60;
     return `${h.toLocaleString("bn-BD")}:${m.toLocaleString("bn-BD")}`;
   };

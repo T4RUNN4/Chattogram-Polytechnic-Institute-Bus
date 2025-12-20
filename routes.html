@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <title>CPI Bus Tracker</title>
   </head>
 
@@ -20,9 +20,9 @@
         </a>
       </div>
       <div>
-        <nav class="text-sm flex gap-1 md:gap-3">
+        <nav class="text-sm hidden md:flex gap-1 md:gap-3">
           <a
-            class="hover:bg-[#30C7B8] py-1 px-2 rounded-md transition duration-200 hover:text-white"
+            class="hover:bg-[#30C7B8] py-1 px-2 rounded-md transition duration-200 ease-in-out hover:text-white"
             href="./index.html"
             >হোম পেইজ</a
           >
@@ -44,8 +44,47 @@
           <a
             class="hover:bg-[#30C7B8] py-1 px-2 rounded-md transition duration-200 ease-in-out hover:text-white"
             href="./lostandfound.html"
-            >হারানো জিনিসপাতি</a
+            >হারানো জিনিস</a
           >
+        </nav>
+        <nav class="md:hidden">
+          <details class="flex flex-col gap-2 text-sm text-right">
+            <summary
+              class="border-2 border-grey-600 bg-white text-sm px-2.5 py-1.5 rounded-md"
+            >
+              মেনু
+            </summary>
+            <a
+              class="py-1 px-2 rounded-md transition duration-200 ease-in-out"
+              href="./index.html"
+              >হোম পেইজ</a
+            >
+            <br />
+            <a
+              class="py-1 px-2 rounded-md transition duration-200 ease-in-out"
+              href="./track.html"
+              >ট্র্যাক করুন</a
+            >
+            <br />
+            <a
+              class="py-1 px-2 rounded-md transition duration-200 ease-in-out"
+              href="./routes.html"
+              >সকল রুট</a
+            >
+            <br />
+            <a
+              class="py-1 px-2 rounded-md transition duration-200 ease-in-out"
+              href="./rules.html"
+              >নিয়মাবলি</a
+            >
+            <br />
+            <a
+              class="py-1 px-2 rounded-md transition duration-200 ease-in-out"
+              href="./lostandfound.html"
+              >হারানো জিনিস</a
+            >
+            <br />
+          </details>
         </nav>
       </div>
     </header>
@@ -59,7 +98,7 @@
               >বাস রুট</span
             >
           </p>
-          <p class="text-xs md:sm">
+          <p class="text-xs md:sm text-center md:text-start">
             সকল বাস ছাড়া সময় সকাল ৭টা এবং দুপুর ১২টা। ফিরতি বাস ছাড়ার সময় দুপুর
             ১:৩০ এবং বিকাল ৬টা
           </p>
@@ -136,8 +175,8 @@
             <div class="flex flex-col items-start justify-center gap-1">
               <p class="text-xs md:text-sm pb-2">যেই রাস্তা দিয়ে যাবে:</p>
               <p class="text-base md:text-xl">
-                পতেঙ্গা - ইপিজেড - কাস্টমস - নিমতলা - চকবাজার - মুরাদপুর - চৌধুরি
-                হাট - চট্টগ্রাম পলিটেকনিক ইন্সটিটিউট
+                পতেঙ্গা - ইপিজেড - কাস্টমস - নিমতলা - চকবাজার - মুরাদপুর -
+                চৌধুরি হাট - চট্টগ্রাম পলিটেকনিক ইন্সটিটিউট
               </p>
             </div>
           </div>
@@ -186,8 +225,8 @@
     <footer
       class="flex flex-col items-center justify-center pt-5 pb-5 text-sm gap-1"
     >
-      <p>Developed by Team 0xExp1073R5</p>
-      <p>© 2025 All rights reserved</p>
+      <p class="text-xs md:text-sm">Developed by Team 0xExp1073R5</p>
+      <p class="text-xs md:text-sm">© 2025 All rights reserved</p>
     </footer>
   </body>
 </html>
