@@ -1,4 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
+  ScrollReveal().reveal(".reveal", {
+    distance: "60px",
+    origin: "bottom",
+    duration: 800,
+    easing: "ease-out",
+    interval: 140,
+    reset: false
+  });
+  
   const stopMap = {
     "অক্সিজেন": "oxygen",
     "চৌধুরি হাট": "chowdhury hat",
@@ -45,16 +54,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const searchButton = document.getElementById("searchButton");
   const result = document.getElementById("result");
   const resultDiv = document.getElementById("result-div");
-
-  ScrollReveal().reveal(".reveal", {
-    distance: "60px",
-    origin: "bottom",
-    duration: 800,
-    easing: "ease-out",
-    interval: 140,
-    reset: false
-  });
-
 
   stopInput.addEventListener("input", () => {
     const query = stopInput.value.trim().toLowerCase();
