@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="./style.css" />
     <title>CPI Bus Tracker</title>
   </head>
 
   <body class="flex flex-col bg-[F5F5F5] text-[#252525] min-h-screen">
-    <header class="flex flex-row items-start justify-between pt-6 pb-4 px-10">
+    <header class="flex flex-row items-start justify-between pt-6 pb-4 px-10 z-50 sticky top-0 bg-white drop-shadow-xl">
       <div class="flex flex-row items-start gap-3" id="logo">
         <img src="./assets/front-of-bus.png" alt="bus-icon" class="h-6" />
         <a
@@ -92,13 +94,13 @@
     <main class="grow pb-8 px-10">
       <section class="flex flex-col items-center justify-center pt-16">
         <div class="flex flex-col items-center justify-center gap-2 pb-12">
-          <p class="leading-tight font-bold text-2xl md:text-4xl">
+          <p class="reveal leading-tight font-bold text-2xl md:text-4xl">
             বাস ব্যবহারের
             <span class="bg-[#30C7B8] pb-1 pt-2 px-2 rounded-md text-white"
               >নিয়মাবলি</span
             >
           </p>
-          <p class="text-xs md:sm text-center md:text-start">
+          <p class="reveal text-xs md:sm text-center md:text-start">
             ক্যাম্পাস বাস ব্যবহারের সময় সকল শিক্ষার্থীর জন্য যেসকল নিয়ম মেনে চলা
             আবশ্যক
           </p>
@@ -107,7 +109,7 @@
       <section class="flex flex-col items-center justify-center pb-10">
         <div class="flex flex-col items-center justify-center md:px-12 gap-4">
           <div
-            class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
+            class="reveal flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
           >
             <p
               class="text-5xl font-bold bg-orange-600 rounded-lg text-white px-4 pt-2"
@@ -127,7 +129,7 @@
             </p>
           </div>
           <div
-            class="flex flex-col md:flex-row items-center justify-center gap-8 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
+            class="reveal flex flex-col md:flex-row items-center justify-center gap-8 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
           >
             <p
               class="text-5xl font-bold bg-purple-800 rounded-lg text-white px-4 pt-2"
@@ -146,7 +148,7 @@
             </p>
           </div>
           <div
-            class="flex flex-col md:flex-row items-center justify-center gap-8 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
+            class="reveal flex flex-col md:flex-row items-center justify-center gap-8 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
           >
             <p
               class="text-5xl font-bold bg-green-600 rounded-lg text-white px-4 pt-2"
@@ -161,7 +163,7 @@
             </p>
           </div>
           <div
-            class="flex flex-col md:flex-row items-center justify-center gap-8 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
+            class="reveal flex flex-col md:flex-row items-center justify-center gap-8 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
           >
             <p
               class="text-5xl font-bold bg-blue-700 rounded-lg text-white px-4 pt-2"
@@ -178,7 +180,7 @@
             </p>
           </div>
           <div
-            class="flex flex-col md:flex-row items-center justify-center gap-8 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
+            class="reveal flex flex-col md:flex-row items-center justify-center gap-8 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
           >
             <p
               class="text-5xl font-bold bg-amber-400 rounded-lg text-white px-4 pt-2"
@@ -193,7 +195,7 @@
             </p>
           </div>
           <div
-            class="flex flex-col md:flex-row items-center justify-center gap-8 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
+            class="reveal flex flex-col md:flex-row items-center justify-center gap-8 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
           >
             <p
               class="text-5xl font-bold bg-pink-600 rounded-lg text-white px-4 pt-2"
@@ -209,7 +211,7 @@
             </p>
           </div>
           <div
-            class="flex flex-col md:flex-row items-center justify-center gap-8 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
+            class="reveal flex flex-col md:flex-row items-center justify-center gap-8 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
           >
             <p
               class="text-5xl font-bold bg-red-700 rounded-lg text-white px-4 pt-2"
@@ -232,8 +234,9 @@
     <footer
       class="flex flex-col items-center justify-center pt-5 pb-5 text-sm gap-1"
     >
-      <p class="text-xs md:text-sm">Developed by Team 0xExp1073R5</p>
-      <p class="text-xs md:text-sm">© 2025 All rights reserved</p>
+      <p class="text-xs md:text-sm text-center">
+        Developed by Team 0xExp1073R5 <br />© 2025 All rights reserved
+      </p>
     </footer>
   </body>
 </html>
