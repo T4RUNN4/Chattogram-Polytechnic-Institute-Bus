@@ -110,8 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
       resultInfoDiv.innerHTML = `
         <p class="text-2xl font-bold">স্টপ পাওয়া যায়নি</p>
         <p class="pt-2 text-base">
-          সাজেশন থেকে সঠিক স্টপটি সিলেক্ট করুন। <br>
-          বি:দ্র: শুধুমাত্র যেসকল স্টপে বাস দাঁড়াবে সেই স্টপগুলোই উল্লেখিত আছে। <a href="./routes.html">সম্পূর্ণ রুট চেক করুন।</a>
+          সাজেশন থেকে সঠিক স্টপটি সিলেক্ট করুন।</a>
         </p>
       `;
       stopInput.value="";
