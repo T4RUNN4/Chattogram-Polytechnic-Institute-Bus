@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <title>CPI Bus Tracker</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
 
   <body class="flex flex-col bg-[F5F5F5] text-[#252525] min-h-screen">
     <header
-      class="flex flex-row items-start justify-between pt-6 pb-4 px-10 z-50 sticky top-0 bg-white drop-shadow-xl`"
+      class="flex flex-row items-start justify-between pt-6 pb-4 px-10 z-50 sticky top-0 bg-white drop-shadow-xl"
     >
       <div class="flex flex-row items-start gap-3" id="logo">
         <img src="./assets/front-of-bus.png" alt="bus-icon" class="h-6" />
@@ -52,7 +52,7 @@
         <nav class="md:hidden">
           <details class="flex flex-col gap-2 text-sm text-right">
             <summary
-              class="border-2 border-grey-600 bg-white text-sm px-2.5 py-1.5 rounded-md"
+              class="border-2 border-black/10 bg-white text-sm px-2.5 py-1.5 rounded-md"
             >
               মেনু
             </summary>
@@ -90,7 +90,6 @@
         </nav>
       </div>
     </header>
-    <hr />
     <main class="grow pb-8 px-10">
       <section class="flex flex-col items-center justify-center pt-12 pb-10">
         <div class="flex flex-col items-center justify-center gap-2 pb-6">
@@ -162,8 +161,9 @@
         </div>
       </section>
     </main>
-    <hr />
-    <footer class="flex flex-col items-center justify-center pt-5 pb-5 gap-1">
+    <footer
+      class="flex flex-col items-center justify-center pt-5 pb-5 text-sm gap-1"
+    >
       <p class="text-xs md:text-sm text-center">
         Developed by Team 0xExp1073R5 <br />© 2025 All rights reserved
       </p>

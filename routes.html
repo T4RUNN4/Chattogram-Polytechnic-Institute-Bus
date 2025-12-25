@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./style.css" />
     <title>CPI Bus Tracker</title>
   </head>
@@ -50,7 +50,7 @@
         <nav class="md:hidden">
           <details class="flex flex-col gap-2 text-sm text-right">
             <summary
-              class="border-2 border-grey-600 bg-white text-sm px-2.5 py-1.5 rounded-md"
+              class="border-2 border-black/10 bg-white text-sm px-2.5 py-1.5 rounded-md"
             >
               মেনু
             </summary>
@@ -88,7 +88,6 @@
         </nav>
       </div>
     </header>
-    <hr />
     <main class="grow pb-8 px-10">
       <section class="flex flex-col items-center justify-center pt-12 pb-10">
         <div class="flex flex-col items-center justify-center gap-2 pb-10">
@@ -105,114 +104,114 @@
         </div>
         <div class="grid lg:grid-flow-col grid-rows-1 md:grid-rows-3 gap-2">
           <div
-            class="reveal flex items-center justify-center gap-8 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
+            class="reveal flex flex-col md:flex-row items-center justify-center gap-8 p-5 border-2 border-black/10 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
           >
             <div class="flex flex-col items-center justify-center">
-              <p class="text-xl md:text-xl font-bold">রুট</p>
+              <p class="hidden md:flex text-xl md:text-xl font-bold">রুট</p>
               <p
-                class="text-3xl md:text-6xl font-bold bg-orange-600 rounded-lg text-white px-4 pt-2"
+                class="text-5xl md:text-6xl font-bold bg-orange-600 rounded-lg text-white px-4 pt-2"
               >
                 ১
               </p>
             </div>
             <div class="flex flex-col items-start justify-center gap-1">
-              <p class="text-xs md:text-sm pb-2">যেই রাস্তা দিয়ে যাবে:</p>
-              <p class="text-base md:text-lg lg:text-xl">
+              <p class="text-xs md:text-sm pb-2 hidden md:flex">যেই রাস্তা দিয়ে যাবে:</p>
+              <p class="text-base md:text-lg lg:text-xl text-justify md:text-left">
                 অক্সিজেন - চৌধুরি হাট - চুয়েট জংশন রোড - কালুরঘাট জংশন -
                 চট্টগ্রাম পলিটেকনিক ইন্সটিটিউট
               </p>
             </div>
           </div>
           <div
-            class="reveal flex items-center justify-center gap-8 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
+            class="reveal flex flex-col md:flex-row items-center justify-center gap-8 p-5 border-2 border-black/10 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
           >
             <div class="flex flex-col items-center justify-center">
-              <p class="text-xl md:text-xl font-bold">রুট</p>
+              <p class="text-xl md:text-xl font-bold hidden md:flex">রুট</p>
               <p
-                class="text-3xl md:text-6xl font-bold bg-purple-800 rounded-lg text-white px-4 pt-2"
+                class="text-5xl md:text-6xl font-bold bg-purple-800 rounded-lg text-white px-4 pt-2"
               >
                 ২
               </p>
             </div>
             <div class="flex flex-col items-start justify-center gap-1">
-              <p class="text-xs md:text-sm pb-2">যেই রাস্তা দিয়ে যাবে:</p>
-              <p class="text-base md:text-lg lg:text-xl">
+              <p class="text-xs md:text-sm pb-2 hidden md:flex">যেই রাস্তা দিয়ে যাবে:</p>
+              <p class="text-base md:text-lg lg:text-xl text-justify md:text-left">
                 বহদ্দারহাট রুট টার্মিনাল - শুলকবহর - চাঁদগাও - হাটাজারি রোড
                 ক্রসিং - চট্টগ্রাম পলিটেকনিক ইন্সটিটিউট
               </p>
             </div>
           </div>
           <div
-            class="reveal flex items-center justify-center gap-8 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
+            class="reveal flex flex-col md:flex-row items-center justify-center gap-8 p-5 border-2 border-black/10 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
           >
             <div class="flex flex-col items-center justify-center">
-              <p class="text-xl md:text-xl font-bold">রুট</p>
+              <p class="text-xl md:text-xl font-bold hidden md:flex">রুট</p>
               <p
-                class="text-3xl md:text-6xl font-bold bg-green-500 rounded-lg text-white px-4 pt-2"
+                class="text-5xl md:text-6xl font-bold bg-green-500 rounded-lg text-white px-4 pt-2"
               >
                 ৩
               </p>
             </div>
             <div class="flex flex-col items-start justify-center gap-1">
-              <p class="text-xs md:text-sm pb-2">যেই রাস্তা দিয়ে যাবে:</p>
-              <p class="text-base md:text-lg lg:text-xl">
+              <p class="text-xs md:text-sm pb-2 hidden md:flex">যেই রাস্তা দিয়ে যাবে:</p>
+              <p class="text-base md:text-lg lg:text-xl text-justify md:text-left">
                 আগ্রাবাদ এক্সেস রোড - টাইগারপাস - লালখান বাজার - জিইসি মোড় - ২নং
                 গেইট - চট্টগ্রাম পলিটেকনিক ইন্সটিটিউট
               </p>
             </div>
           </div>
           <div
-            class="reveal flex items-center justify-center gap-8 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
+            class="reveal flex flex-col md:flex-row items-center justify-center gap-8 p-5 border-2 border-black/10 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
           >
             <div class="flex flex-col items-center justify-center">
-              <p class="text-xl md:text-xl font-bold">রুট</p>
+              <p class="text-xl md:text-xl font-bold hidden md:flex">রুট</p>
               <p
-                class="text-3xl md:text-6xl font-bold bg-blue-700 text-white rounded-lg px-4 pt-2"
+                class="text-5xl md:text-6xl font-bold bg-blue-700 text-white rounded-lg px-4 pt-2"
               >
                 ৪
               </p>
             </div>
             <div class="flex flex-col items-start justify-center gap-1">
-              <p class="text-xs md:text-sm pb-2">যেই রাস্তা দিয়ে যাবে:</p>
-              <p class="text-base md:text-lg lg:text-xl">
+              <p class="text-xs md:text-sm pb-2 hidden md:flex">যেই রাস্তা দিয়ে যাবে:</p>
+              <p class="text-base md:text-lg lg:text-xl text-justify md:text-left">
                 পতেঙ্গা - ইপিজেড - কাস্টমস - নিমতলা - চকবাজার - মুরাদপুর -
                 চৌধুরি হাট - চট্টগ্রাম পলিটেকনিক ইন্সটিটিউট
               </p>
             </div>
           </div>
           <div
-            class="reveal flex items-center justify-center gap-8 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
+            class="reveal flex flex-col md:flex-row items-center justify-center gap-8 p-5 border-2 border-black/10 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
           >
             <div class="flex flex-col items-center justify-center">
-              <p class="text-xl md:text-xl font-bold">রুট</p>
+              <p class="text-xl md:text-xl font-bold hidden md:flex">রুট</p>
               <p
-                class="text-3xl md:text-6xl font-bold bg-pink-600 rounded-lg text-white px-4 pt-2"
+                class="text-5xl md:text-6xl font-bold bg-pink-600 rounded-lg text-white px-4 pt-2"
               >
                 ৫
               </p>
             </div>
             <div class="flex flex-col items-start justify-center gap-1">
-              <p class="text-xs md:text-sm pb-2">যেই রাস্তা দিয়ে যাবে:</p>
-              <p class="text-base md:text-lg lg:text-xl">
+              <p class="text-xs md:text-sm pb-2 hidden md:flex">যেই রাস্তা দিয়ে যাবে:</p>
+              <p class="text-base md:text-lg lg:text-xl text-justify md:text-left">
                 সীতাকুন্ড - ফৌজদারহাট - বায়োজীদ লিংক রোড - চুয়েট রোড জংশন -
                 চট্টগ্রাম পলিটেকনিক ইন্সটিটিউট
               </p>
             </div>
           </div>
           <div
-            class="reveal flex items-center justify-center gap-8 p-5 border-2 border-grey-600 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
+            class="reveal flex flex-col md:flex-row items-center justify-center gap-8 p-5 border-2 border-black/10 rounded-lg bg-white drop-shadow-xl cursor-pointer transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
           >
             <div class="flex flex-col items-center justify-center">
-              <p class="text-xl md:text-xl font-bold">রুট</p>
+              <p class="text-xl md:text-xl font-bold hidden md:flex">রুট</p>
               <p
-                class="text-3xl md:text-6xl font-bold bg-amber-400 rounded-lg text-white px-4 pt-2"
+                class="text-5xl md:text-6xl font-bold bg-amber-400 rounded-lg text-white px-4 pt-2"
               >
                 ৬
               </p>
             </div>
             <div class="flex flex-col items-start justify-center gap-1">
-              <p class="text-xs md:text-sm pb-2">যেই রাস্তা দিয়ে যাবে:</p>
-              <p class="text-base md:text-lg lg:text-xl">
+              <p class="text-xs md:text-sm pb-2 hidden md:flex">যেই রাস্তা দিয়ে যাবে:</p>
+              <p class="text-base md:text-lg lg:text-xl text-justify md:text-left">
                 পাহাড়তলী - খুলসী - লালখান বাজার - মুরাদপুর - চট্টগ্রাম পলিটেকনিক
                 ইন্সটিটিউট
               </p>
@@ -221,7 +220,6 @@
         </div>
       </section>
     </main>
-    <hr />
     <footer
       class="flex flex-col items-center justify-center pt-5 pb-5 text-sm gap-1"
     >

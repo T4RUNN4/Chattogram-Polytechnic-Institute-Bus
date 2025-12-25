@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./style.css" />
     <title>CPI Bus Tracker</title>
   </head>
@@ -50,7 +50,7 @@
         <nav class="md:hidden">
           <details class="flex flex-col gap-2 text-sm text-right">
             <summary
-              class="border-2 border-grey-600 bg-white text-sm px-2.5 py-1.5 rounded-md"
+              class="border-2 border-black/10 bg-white text-sm px-2.5 py-1.5 rounded-md"
             >
               মেনু
             </summary>
@@ -88,7 +88,6 @@
         </nav>
       </div>
     </header>
-    <hr />
     <main class="grow pb-8 px-10">
       <section class="flex flex-col items-center justify-center pt-12">
         <div class="flex flex-col items-center justify-center gap-4 pb-10">
@@ -106,7 +105,7 @@
       </section>
       <section class="flex flex-col items-center justify-center gap-2">
         <details
-          class="reveal border-2 border-grey-600 py-4 px-6 cursor-pointer rounded-lg transition duration-200 ease-in-out drop-shadow-md w-[90%] bg-white hover:-translate-y-1 hover:scale-105"
+          class="reveal border-2 border-black/10 py-4 px-6 cursor-pointer rounded-lg transition duration-200 ease-in-out drop-shadow-md w-[90%] bg-white hover:-translate-y-1 hover:scale-105"
         >
           <summary class="text-xl font-bold py-2">
             এনভায়রমেন্টাল স্টাডিজ বই
@@ -118,7 +117,7 @@
           বিষয় কোড ২৯০৪১।
         </details>
         <details
-          class="reveal border-2 border-grey-600 py-4 px-6 cursor-pointer rounded-lg transition duration-200 ease-in-out drop-shadow-md w-[90%] bg-white hover:-translate-y-1 hover:scale-105"
+          class="reveal border-2 border-black/10 py-4 px-6 cursor-pointer rounded-lg transition duration-200 ease-in-out drop-shadow-md w-[90%] bg-white hover:-translate-y-1 hover:scale-105"
         >
           <summary class="text-xl font-bold py-2">
             fx 991Exs ক্যালকুলেটর
@@ -129,7 +128,7 @@
           <span class="font-bold">fx 991Exs ক্যালকুলেটর </span>পাওয়া গিয়েছে।
         </details>
         <details
-          class="reveal border-2 border-grey-600 py-4 px-6 cursor-pointer rounded-lg transition duration-200 ease-in-out drop-shadow-md w-[90%] bg-white hover:-translate-y-1 hover:scale-105"
+          class="reveal border-2 border-black/10 py-4 px-6 cursor-pointer rounded-lg transition duration-200 ease-in-out drop-shadow-md w-[90%] bg-white hover:-translate-y-1 hover:scale-105"
         >
           <summary class="text-xl font-bold py-2">কালো ছাতা</summary>
           গত <span class="font-bold">৩০ই নভেম্বর ২০২৫</span> তারিখে
@@ -139,7 +138,6 @@
         </details>
       </section>
     </main>
-    <hr />
     <footer
       class="flex flex-col items-center justify-center pt-5 pb-5 text-sm gap-1"
     >
