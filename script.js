@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
     resultInfoDiv.innerHTML = "";
 
     if (!stop || !time) {
-      resultInfoDiv.classList.remove("hidden");
+      resultInfoDiv.classList.remove("hidden", "border-red-600", "border-green-400");
       resultInfoDiv.classList.add("border-red-600");
       resultInfoDiv.innerHTML = `
         <p class="text-2xl font-bold">সঠিকভাবে স্টপ এবং সময় সিলেক্ট করুন।</p>
@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (!Object.prototype.hasOwnProperty.call(stopMap, stop)) {
-      resultInfoDiv.classList.remove("hidden");
+      resultInfoDiv.classList.remove("hidden", "border-red-600", "border-green-400");
       resultInfoDiv.classList.add("border-red-600");
       resultInfoDiv.innerHTML = `
         <p class="text-2xl font-bold">স্টপ পাওয়া যায়নি</p>
@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
     if (!servedByAnyBus) {
-      resultInfoDiv.classList.remove("hidden");
+      resultInfoDiv.classList.remove("hidden", "border-red-600", "border-green-400");
       resultInfoDiv.classList.add("border-red-600");
       resultInfoDiv.innerHTML = `
         <p class="text-2xl font-bold">কোনো বাস নেই</p>
@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     Object.values(mockData).forEach(bus => {
       if (bus.passedStops.includes(stop)) {
-        resultInfoDiv.classList.remove("hidden");
+        resultInfoDiv.classList.remove("hidden", "border-red-600", "border-green-400");
         resultInfoDiv.classList.add("border-red-600");
         resultInfoDiv.innerHTML = `
           <p class="text-2xl font-bold">
@@ -172,7 +172,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const arrivalMinutes = userMinutes + eta;
       const arrivalTime = minutesToTime(arrivalMinutes);
 
-      resultInfoDiv.classList.remove("hidden");
+      resultInfoDiv.classList.remove("hidden", "border-red-600", "border-green-400");
       resultInfoDiv.classList.add("border-green-400");
       resultInfoDiv.innerHTML = `
         <p class="text-2xl font-bold">
