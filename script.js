@@ -41,11 +41,13 @@ document.addEventListener("DOMContentLoaded", () => {
       passedStops: ["বহদ্দারহাট রুট টার্মিনাল"],
       nextStops: ["শুলকবহর", "চাঁদগাও", "হাটাজারি রোড ক্রসিং"],
       requiredTimes: [5, 6, 12, 15],
+      seats: 15,
     },
     Bus2: {
       passedStops: ["পতেঙ্গা", "ইপিজেড", "কাস্টমস", "নিমতলা"],
       nextStops: ["চকবাজার", "মুরাদপুর", "চৌধুরি হাট"],
       requiredTimes: [12, 10, 6, 7],
+      seats: 5
     }
   };
 
@@ -187,7 +189,8 @@ document.addEventListener("DOMContentLoaded", () => {
           <span class="font-bold text-green-600">
             ${(arrivalTime).toLocaleString("bn-BD")}
           </span>
-          টায়
+          টায়। </br>
+          বাসে মোট খালি সিটের সংখ্যা <span class="font-bold text-green-600">${(bus.seats).toLocaleString("bn-BD")}</span>টি
         </p>
       `;
 
