@@ -15,7 +15,7 @@
 <p style="text-align: justify;">So, on my Diploma-in-Engineer on Computer Science & Technolgy curriculam, there was a subject in 4th Semester called Web Design and Development. Under that subject, we as a team was needed to present a website of our own. As a Captain and Lead Developer of our team, me and my team decided to build this project called "Chattogram Polytechnic Institute Bus tracker" which is initially a bus tracker for our campus. Although when we were making this project, there was no bus service in our campus. So our whole project was made based on mockdata.<p>
 
 Projects Sneakpeak: <br>
-<img src="./assets/Readme/thumbnail.png" alt="thumbnail"/>
+<img src="./Readme/thumbnail.png" alt="thumbnail"/>
 
 ## Technical details
 ![HTML5](https://img.shields.io/badge/-HTML5-%23E44D27?style=flat-square&logo=html5&logoColor=ffffff)
@@ -35,10 +35,10 @@ Well, for this website, these tech stacks are used. The goal of this website was
 - <b> In-depth Details </b>: Dedicated page for all the routes and all the rules so user can instantly refer to them.
 </br>
 </br>
-<img src="./assets/Readme/track.png" alt="tracking page"/>
-<img src="./assets/Readme/lost&found.png" alt="tracking page"/>
-<img src="./assets/Readme/routes.png" alt="tracking page"/>
-<img src="./assets/Readme/rules.png" alt="tracking page"/>
+<img src="./Readme/track.png" alt="tracking page"/>
+<img src="./Readme/lost&found.png" alt="tracking page"/>
+<img src="./Readme/routes.png" alt="tracking page"/>
+<img src="./Readme/rules.png" alt="tracking page"/>
 
 ## Team Members of this project
 
