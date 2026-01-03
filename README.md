@@ -18,7 +18,7 @@ Projects Sneakpeak: <br>
 <img src="./Readme/thumbnail.png" alt="thumbnail"/>
 
 ## Technical details
-![ReactJS](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=white&style=for-the-badge)
+![ReactJS](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black&style=for-the-badge)
 ![TailwindCSS](https://img.shields.io/badge/-TailwindCSS-%231a202c?style=flat-square&logo=tailwind-css)
 ![Scrollreveal](https://img.shields.io/badge/-Scrollreveal-%23F7DF1C?style=flat-square&logo=scrollreveal&logoColor=000000&labelColor=%23F7DF1C&color=%23FFCE5A)
 
