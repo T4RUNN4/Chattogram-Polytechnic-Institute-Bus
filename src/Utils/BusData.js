@@ -1,0 +1,42 @@
+export const stopMap = {
+  "অক্সিজেন": "oxygen",
+  "চৌধুরি হাট": "chowdhury hat",
+  "চুয়েট জংশন রোড": "cuet junction road",
+  "কালুরঘাট জংশন": "kalurghat junction",
+  "চট্টগ্রাম পলিটেকনিক ইন্সটিটিউট": "chattogram polytechnic institute",
+  "বহদ্দারহাট রুট টার্মিনাল": "bahaddarhat route terminal",
+  "শুলকবহর": "shulokbohor",
+  "চাঁদগাও": "chadgao",
+  "হাটাজারি রোড ক্রসিং": "hatazari road crossing",
+  "আগ্রাবাদ এক্সেস রোড": "agrabad access road",
+  "টাইগারপাস": "tigerpass",
+  "লালখান বাজার": "lalkhan bazar",
+  "জিইসি মোড়": "gec circle",
+  "২নং গেইট": "2no. gate",
+  "পতেঙ্গা": "patenga",
+  "ইপিজেড": "epez",
+  "কাস্টমস": "customs",
+  "নিমতলা": "nimtola",
+  "চকবাজার": "chawkbazar",
+  "মুরাদপুর": "muradpur",
+  "সীতাকুন্ড": "sitakundu",
+  "ফৌজদারহাট": "fouzdarhat",
+  "বায়োজীদ লিংক রোড": "bayazid link road",
+  "পাহাড়তলী": "pahartali",
+  "খুলসী": "khulsi",
+};
+
+export const mockData = {
+  Bus1: {
+    passedStops: ["বহদ্দারহাট রুট টার্মিনাল"],
+    nextStops: ["শুলকবহর", "চাঁদগাও", "হাটাজারি রোড ক্রসিং"],
+    requiredTimes: [5, 6, 12, 15],
+    seats: 15,
+  },
+  Bus2: {
+    passedStops: ["পতেঙ্গা", "ইপিজেড", "কাস্টমস", "নিমতলা"],
+    nextStops: ["চকবাজার", "মুরাদপুর", "চৌধুরি হাট"],
+    requiredTimes: [12, 10, 6, 7],
+    seats: 5,
+  },
+};

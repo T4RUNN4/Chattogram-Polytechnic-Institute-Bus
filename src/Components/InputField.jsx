@@ -1,4 +1,4 @@
-export default function InputField({ type, placeholder, id, label }) {
+export default function InputField({ type, placeholder, value, onChange, label, id }) {
   return (
     <>
       <div class="reveal">
@@ -9,8 +9,10 @@ export default function InputField({ type, placeholder, id, label }) {
           required
           autocomplete="off"
           type={type}
-          id={id}
+          value={value}
+          onChange={(e) => onChange(e.target.value)}
           placeholder={placeholder}
+          id={id}
           class="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-4 focus:ring-[#30C7B8] transition duration-300 text-gray-900"
         />
       </div>
