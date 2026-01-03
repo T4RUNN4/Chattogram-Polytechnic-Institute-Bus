@@ -40,12 +40,15 @@ Well, for this website, these tech stacks are used. The goal of this website was
 <img src="./Readme/rules.png" alt="rules page"/>
 <img src="./Readme/drivers.png" alt="drivers page"/>
 
-## Team Members of this project
+<br>
 
-- Tarunna Sen (Team Lead)
-- Purnata Barua Pujaprema
-- Md. Abrarul Anwar
-- Sonia Akter
+### Possible upcoming updates
+
+- Database integration
+- Real-time bus data instead of mock data
+- Dark Mode
+- Multilanguage Option
+<br>
 <br>
 <hr>
 <br>
