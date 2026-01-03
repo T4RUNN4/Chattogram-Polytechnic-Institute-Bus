@@ -31,12 +31,14 @@ Well, for this website, these tech stacks are used. The goal of this website was
 - <b> Tracking </b>: Track your campus bus on realtime with the info number of seats and possible required time to arrive at user's stop
 - <b> Lost & Found </b>: A dedicated page for the user to check for their lost items with enough detail to ensure that it theirs.
 - <b> In-depth Details </b>: Dedicated page for all the routes and all the rules so user can instantly refer to them.
+- <b> Drivers Details </b>: Dedicated page for all the bus drivers info.
 </br>
 </br>
 <img src="./Readme/track.png" alt="tracking page"/>
-<img src="./Readme/lost&found.png" alt="tracking page"/>
-<img src="./Readme/routes.png" alt="tracking page"/>
-<img src="./Readme/rules.png" alt="tracking page"/>
+<img src="./Readme/lost&found.png" alt="lostandfound page"/>
+<img src="./Readme/routes.png" alt="routes page"/>
+<img src="./Readme/rules.png" alt="rules page"/>
+<img src="./Readme/drivers.png" alt="drivers page"/>
 
 ## Team Members of this project
 
