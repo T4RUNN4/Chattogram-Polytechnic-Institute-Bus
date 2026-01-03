@@ -2,7 +2,7 @@
   
   # চট্টগ্রাম পলিটেকনিক ইন্সটিটিউট বাস
   
-  ![Version](https://img.shields.io/badge/Version%201-3A1261)
+  ![Version](https://img.shields.io/badge/Version%202-3A1261)
   ![Mock Data](https://img.shields.io/badge/Mock%20Data-c75c10)
   ![Academic Project](https://img.shields.io/badge/Academic%20Project-276749)
 
@@ -18,10 +18,8 @@ Projects Sneakpeak: <br>
 <img src="./Readme/thumbnail.png" alt="thumbnail"/>
 
 ## Technical details
-![HTML5](https://img.shields.io/badge/-HTML5-%23E44D27?style=flat-square&logo=html5&logoColor=ffffff)
-![CSS3](https://img.shields.io/badge/-CSS3-%231572B6?style=flat-square&logo=css3)
+![ReactJS](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=white&style=for-the-badge)
 ![TailwindCSS](https://img.shields.io/badge/-TailwindCSS-%231a202c?style=flat-square&logo=tailwind-css)
-![JavaScript](https://img.shields.io/badge/-JavaScript-%23F7DF1C?style=flat-square&logo=javascript&logoColor=000000&labelColor=%23F7DF1C&color=%23FFCE5A)
 ![Scrollreveal](https://img.shields.io/badge/-Scrollreveal-%23F7DF1C?style=flat-square&logo=scrollreveal&logoColor=000000&labelColor=%23F7DF1C&color=%23FFCE5A)
 
 Well, for this website, these tech stacks are used. The goal of this website was to make it responsive, informative and user-friendly. 
