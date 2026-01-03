@@ -4,7 +4,8 @@ const Navs = {
   "হোম পেইজ": "/",
   "ট্র্যাক করুন": "/track",
   "সকল রুট": "/bus-routes",
-  "নিয়মাবলি": "/rules",
+  নিয়মাবলি: "/rules",
+  "চালকের তালিকা": "/drivers",
   "হারানো জিনিস": "/lost-and-found",
 };
 
@@ -22,9 +23,11 @@ export default function Navbar() {
             <summary className="border-2 border-black/10 bg-white text-sm px-2.5 py-1.5 rounded-md">
               মেনু
             </summary>
-            {Object.keys(Navs).map((key) => (
-              <NavElement key={key} link={Navs[key]} label={key} />
-            ))}
+            <div className="flex flex-col items-end justify-center">
+              {Object.keys(Navs).map((key) => (
+                <NavElement key={key} link={Navs[key]} label={key} />
+              ))}
+            </div>
           </details>
         </nav>
       </div>

@@ -8,6 +8,7 @@ import Hourglass from "../Assets/hourglass.png";
 import List from "../Assets/list.png";
 import Lost from "../Assets/lost-items.png";
 import Corpora from "../Assets/corpora.png";
+import Driver from "../Assets/driver.png"
 import Testimonial from "../Sections/Testimonial";
 
 export default function Home() {
@@ -51,7 +52,7 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-col md:flex-row items-center justify-center md:px-10 lg:px-20 gap-5">
-              <Card img={List} alt="list icon" text="সকল বাস রুটের তালিকা" />
+              <Card img={Driver} alt="driver icon" text="বাস চালকদের তালিকা" />
               <Card
                 img={Lost}
                 alt="lost items icon"

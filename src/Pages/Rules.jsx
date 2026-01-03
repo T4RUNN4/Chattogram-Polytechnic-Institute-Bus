@@ -41,6 +41,7 @@ export default function Rules() {
         <Header />
         <main className="grow pb-8 px-10">
           <Heading
+            text="বাস ব্যবহারের"
             maintext="নিয়মাবলি"
             subtext="ক্যাম্পাস বাস ব্যবহারের সময় সকল শিক্ষার্থীর জন্য যেসকল নিয়ম মেনে চলা
         আবশ্যক"

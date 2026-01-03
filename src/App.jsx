@@ -5,6 +5,7 @@ import LostAndFound from "./Pages/LostAndFound";
 import BusRoutes from "./Pages/BusRoutes";
 import Rules from "./Pages/Rules";
 import Track from "./Pages/Track";
+import Driver from "./Pages/Drivers";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/lost-and-found" element={<LostAndFound />} />
         <Route path="/track" element={<Track />} />
         <Route path="/bus-routes" element={<BusRoutes />} />
+        <Route path="/drivers" element={<Driver />} />
         <Route path="/rules" element={<Rules />} />
       </Routes>
     </BrowserRouter>
