@@ -28,9 +28,9 @@ Well, for this website, these tech stacks are used. The goal of this website was
 
 ## Features
 
-- <b> Tracking </b>: Track your campus bus in real-time with the info number of seats and possible required time to arrive at the user's stop
+- <b> Tracking </b>: Track your campus bus in real-time with the info number of seats and the possible required time to arrive at the user's stop
 - <b> Lost & Found </b>: A dedicated page for the user to check for their lost items with enough detail to ensure that it's theirs.
-- <b> In-depth Details </b>: Dedicated page for all the routes and all the rules so user can instantly refer to them.
+- <b> In-depth Details </b>: Dedicated page for all the routes and all the rules so the user can instantly refer to them.
 - <b> Drivers Details </b>: Dedicated page for all the bus drivers info.
 </br>
 </br>
@@ -57,7 +57,9 @@ Install Dependencies<br>
 Run the project<br>
 <code>npm run dev</code><br><br>
 
-<br>
+## Live Link
+Browse the project from here: <a href="https://cpi-bus.vercel.app">cpi-bus.vercel.app</a>
+
 <br>
 <hr>
 <br>
