@@ -12,7 +12,7 @@
 
 <br>
 
-<p style="text-align: justify;">So, on my Diploma-in-Engineer on Computer Science & Technolgy curriculam, there was a subject in 4th Semester called Web Design and Development. Under that subject, we as a team was needed to present a website of our own. As a Captain and Lead Developer of our team, me and my team decided to build this project called "Chattogram Polytechnic Institute Bus tracker" which is initially a bus tracker for our campus. Although when we were making this project, there was no bus service in our campus. So our whole project was made based on mockdata.<p>
+<p style="text-align: justify;">So, on my Diploma-in-Engineer on Computer Science & Technolgy curriculam, there was a subject in 4th Semester called Web Design and Development. Under that subject, we as a team were needed to present a website of our own. As a Captain and Lead Developer of our team, my team and I decided to build this project called "Chattogram Polytechnic Institute Bus Tracker", which is initially a bus tracker for our campus. Although when we were making this project, there was no bus service on our campus. So our whole project was made based on mock data.<p>
 
 Projects Sneakpeak: <br>
 <img src="./Readme/thumbnail.png" alt="thumbnail"/>
@@ -22,14 +22,14 @@ Projects Sneakpeak: <br>
 ![TailwindCSS](https://img.shields.io/badge/-TailwindCSS-%231a202c?style=flat-square&logo=tailwind-css)
 ![Scrollreveal](https://img.shields.io/badge/-Scrollreveal-%23F7DF1C?style=flat-square&logo=scrollreveal&logoColor=000000&labelColor=%23F7DF1C&color=%23FFCE5A)
 
-Well, for this website, these tech stacks are used. The goal of this website was to make it responsive, informative and user-friendly. 
+Well, for this website, these tech stacks are used. The goal of this website was to make it responsive, informative, and user-friendly. 
 
-<b>All the information of this website is imaginary.</b>
+<b>All the information on this website is imaginary.</b>
 
 ## Features
 
-- <b> Tracking </b>: Track your campus bus on realtime with the info number of seats and possible required time to arrive at user's stop
-- <b> Lost & Found </b>: A dedicated page for the user to check for their lost items with enough detail to ensure that it theirs.
+- <b> Tracking </b>: Track your campus bus in real-time with the info number of seats and possible required time to arrive at the user's stop
+- <b> Lost & Found </b>: A dedicated page for the user to check for their lost items with enough detail to ensure that it's theirs.
 - <b> In-depth Details </b>: Dedicated page for all the routes and all the rules so user can instantly refer to them.
 - <b> Drivers Details </b>: Dedicated page for all the bus drivers info.
 </br>
@@ -42,12 +42,21 @@ Well, for this website, these tech stacks are used. The goal of this website was
 
 <br>
 
-### Possible upcoming updates
+## Dependencies
 
-- Database integration
-- Real-time bus data instead of mock data
-- Dark Mode
-- Multilanguage Option
+<code>react</code> <code>react-router-dom</code> <code>scrollreveal</code> <code>tailwindcss</code>
+
+<br>
+
+## Run Locally
+
+Clone the project<br>
+<code>git clone https://github.com/T4RUNN4/Chattogram-Polytechnic-Institute-Bus.git</code><br><br>
+Install Dependencies<br>
+<code>npm install</code><br><br>
+Run the project<br>
+<code>npm run dev</code><br><br>
+
 <br>
 <br>
 <hr>
